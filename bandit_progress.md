@@ -5,5 +5,6 @@ SSH into bandit0@bandit.labs.overthewire.org on port 2220
 
 ### Commands Used:
 ```bash
-ssh bandit0@bandit.labs.overthewire.org -p 2220
+ls
+cat readme
 
