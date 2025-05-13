@@ -93,3 +93,17 @@ find . -type f -user bandit7 -group bandit6 -size 33c
 ## Then i realised 'find .' only searches the current directory tree, whereas 'find /' searches the entire file system, starting at the root and then searching every directory!
 ## using 'find /' is very slow, so its essential to use filters!
 
+
+# Level 7 -> 8
+
+### Goal:
+Find the password next to a specific word
+
+### Commands Used
+```bash
+ls
+rep -i 'millionth' data.txt 
+
+##Initially tried to use the find command which didn't work
+## Remembered that grep lets me search for words, used -i to ignore case
+
