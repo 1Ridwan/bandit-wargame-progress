@@ -73,3 +73,23 @@ cat ./maybehere07/.file2
 
 ## Feel like i took the easy route as i only checked for files that were 1033 bytes in size... 
 
+
+# Level 6 -> Level 7
+
+### Goal:
+Find the file in the server that has 3 different properties
+
+### Commands Used
+```bash
+ls
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+
+
+
+## This one was difficult at first. I knew how to search for files using filters. I initially ran 
+find . -type f -user bandit7 -group bandit6 -size 33c
+## But this wasn't working, and i kept seeing permission denied messages that were just distracting... Which is when i discovered 2>/dev/null to hide error messages
+## Then i realised 'find .' only searches the current directory tree, whereas 'find /' searches the entire file system, starting at the root and then searching every directory!
+## using 'find /' is very slow, so its essential to use filters!
+
