@@ -94,6 +94,7 @@ find . -type f -user bandit7 -group bandit6 -size 33c
 ## using 'find /' is very slow, so its essential to use filters!
 
 
+
 # Level 7 -> 8
 
 ### Goal:
@@ -102,8 +103,28 @@ Find the password next to a specific word
 ### Commands Used
 ```bash
 ls
-rep -i 'millionth' data.txt 
+rep -i 'millionth' data.txt
 
 ##Initially tried to use the find command which didn't work
 ## Remembered that grep lets me search for words, used -i to ignore case
+
+
+
+# Level 8 -> 9
+
+### Goal:
+Find the line of text that occurs only once
+
+### Commands Used
+```bash
+ls
+sort data.txt | uniq -c | grep '1 '
+
+## Initially did 
+sort data.txt | uniq
+## however this returned a huge block of text that i didnt understand so i used 
+sort data.txt | uniq -c 
+## now i had the total count for each line, but it was still a huge block of text so i used grep to return the line that only appears once!
+
+  
 
