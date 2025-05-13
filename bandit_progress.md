@@ -40,3 +40,21 @@ cd inhere
 ls
 ls -a
 cat ...Hiding-From-You
+
+# Level 4 -> Level 5
+
+### Goal:
+Find the human readable file
+
+### Commands Used
+```bash
+ls
+cd inhere
+ls
+find . -exec file {} \;
+
+
+## I struggled with this one, but I learnt what human readable files mean now
+## Also learnt how to use '-exec file {} \;' which seems like it will be really useful in the future!
+
+
