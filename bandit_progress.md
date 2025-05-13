@@ -126,5 +126,42 @@ sort data.txt | uniq
 sort data.txt | uniq -c 
 ## now i had the total count for each line, but it was still a huge block of text so i used grep to return the line that only appears once!
 
+## Level 9 -> 10
+
+## Goal: Find password in one of the few human readable strings, preceded by several '='
+
+### Commands Used
+```bash
+strings data.txt | grep "==="
+
+## Found this much easier, i realised
+strings data.txt
+## returned all human readable lines in the file, so i used grep to finish the job  
+
+
+## Level 10 -> 11
+
+## Goal: Find password in file which contains base64 data
+
+### Commands Used
+```bash
+base64 data.txt -d
+
+## Super easy, looked at the manual for base64 and realised base64 -d would decode the data
+
+
+## Level 11 -> 12
+
+## Goal: Find password in file which has ROT13 applied
+
+### Commands Used
+```bash
+tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< 'Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4'
+
   
+## Had no clue at first, i knew how to do this in python from previous experience
+## decided to look at the helpful reading material and learn how to use the tr command
+
+
+
 
