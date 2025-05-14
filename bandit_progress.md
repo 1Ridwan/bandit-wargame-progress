@@ -173,3 +173,20 @@ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 
 
+# Level 12 -> 13
+
+## Goal: Find password in file that has been repeatedly compressed
+
+### Commands Used
+```bash
+mv
+cp
+gzip -d
+bzip2 -d
+mktemp -d
+file
+
+## This level was insanely annoying, every time i thought i was done there was more. But honestly, i learnt so much from this level, i have a better understanding of how to copy files, how the file command works, how files are understood in linux (i couldnt decompress the file unless i saved it in the format necessary). This was definitely the most difficult challenge yet, but also gave me the deepest insight into how Linux works.
+## imagine i could write a script that did all of this for me?
+
+
