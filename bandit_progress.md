@@ -162,6 +162,14 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< 'Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
 ## Had no clue at first, i knew how to do this in python from previous experience
 ## decided to look at the helpful reading material and learn how to use the tr command
 
+## UPDATE
+## Went through the whole game again and realised i can use 
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' 
+## instead, this is a better command as it can be used in a script
+## will always work even if the contents of data.txt change
+## doesnt require me to cat data.txt first to see the contents
+
+
 
 
 
