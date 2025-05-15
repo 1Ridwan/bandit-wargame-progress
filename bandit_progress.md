@@ -190,3 +190,8 @@ file
 ## imagine i could write a script that did all of this for me?
 
 
+## Update; finally completed level 13 all the way through to level 20
+## Decided not to log progress after each level as i wanted to concentrate and maintain momentum
+## The plan now is to move onto SadServers and then come back to bandit later
+## then ill post the rest of my solutions for levels 13-20 in this progress file
+## shoutout to CoderCo, this has been an amazing learning experience 
